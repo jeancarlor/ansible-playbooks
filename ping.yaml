@@ -1,0 +1,8 @@
+---
+- name: Testar conectividade dos servidores
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Executar ping
+      ansible.builtin.ping:
